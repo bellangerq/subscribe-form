@@ -1,0 +1,69 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light: hsl(0, 0%, 80%);
+  --color-dark: hsl(0, 0%, 20%);
+  --color-success: #47664A;
+
+  background: var(--color-light);
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+body {
+  background: var(--color-white);
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 1rem;
+}
+
+/* Custom elements are inline by default */
+subscribe-form {
+  display: block;
+}
+
+label {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+input {
+  border-style: solid;
+  box-sizing: content-box;
+  font-size: inherit;
+  padding: 0.5rem 1rem;
+  width: calc(100% - 2rem);
+}
+
+[type="submit"] {
+  background: var(--color-dark);
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+[type="email"] {
+  color: var(--color-dark);
+}
+
+[role="alert"] {
+  background: var(--color-success);
+  color: var(--color-white);
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+[role="alert"] button {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
